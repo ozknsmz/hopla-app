@@ -26,7 +26,7 @@ footer{color:var(--muted);font-size:14px;margin-top:40px}
 <main>
 <nav><a href="index.html">Hopla</a><a href="privacy-tr.html" hreflang="tr">Türkçe</a><a href="support.html">Support</a></nav>
 <h1>Privacy Policy</h1>
-<p class="meta">Hopla: Jump &amp; Hop (iOS) · Effective date: 29 October 2026</p>
+<p class="meta">Hopla: Beat Your Rivals (iOS) · Effective date: 16 November 2026</p>
 
 <p>This policy explains what data the Hopla mobile game ("Hopla", "the app") collects, why, who receives it and what choices you have. Hopla is designed to collect as little as possible: there is no sign-up, and we never ask for your name, e-mail address, phone number, contacts, photos or precise location.</p>
 
@@ -42,7 +42,9 @@ Contact: <a href="mailto:smzozkn@gmail.com">smzozkn@gmail.com</a></p>
 <tr><td>Random user ID</td><td>A random identifier (UUID) generated for your anonymous account, plus a session token kept on your device so you stay the same player.</td></tr>
 <tr><td>Nickname</td><td>Automatically generated (for example "Player1234" or "Oyuncu1234"). You can change it. Your nickname is <strong>public</strong>: other players see it on the leaderboard. Please do not use your real name or personal information as a nickname.</td></tr>
 <tr><td>Scores</td><td>Your best score, the number of steps in that run, and timestamps (when your account was created and when you set your best score). Your rank is calculated from these.</td></tr>
+<tr><td>Selected character</td><td>Which of the game's characters you currently play with (for example "Porcelain"). It is <strong>public</strong>: other players see your character on the leaderboard and in their game when they chase your score.</td></tr>
 <tr><td>Reports and blocks</td><td>If you report a nickname, we store your user ID, the reported player's user ID and nickname, the reason and the time. If you block a player, the list of players you blocked is stored so that their nickname is hidden for you.</td></tr>
+<tr><td>Notifications (only if you turn them on)</td><td>If you allow notifications, Apple gives the app a push token for your device. We store this token with your user ID, whether it is a test or production token, your app language (Turkish or English) and your device's time-zone offset (for example UTC+3), so we can tell you when another player beats your record and avoid notifying you at night. A notification contains only the other player's public nickname (never a nickname hidden after reports) and their score. We send at most one notification every 6 hours. Turning notifications off in Settings → Alerts, or in your iPhone settings, removes the token from our server.</td></tr>
 <tr><td>Technical request data</td><td>When the app talks to our server, your device's IP address and basic request information are necessarily processed to deliver the response and to protect the service against abuse. We do not store IP addresses in our database; our hosting provider may keep them in short-lived security and access logs.</td></tr>
 </table></div>
 
@@ -67,8 +69,9 @@ Contact: <a href="mailto:smzozkn@gmail.com">smzozkn@gmail.com</a></p>
 <h2 id="s3">3. Why we use the data and legal bases</h2>
 <div class="wrap"><table>
 <tr><th>Purpose</th><th>Data</th><th>Legal basis (GDPR / KVKK)</th></tr>
-<tr><td>Run the online leaderboard, show your rank and nickname</td><td>User ID, nickname, scores, timestamps</td><td>Performance of our agreement with you to provide the game (GDPR Art. 6(1)(b); KVKK Art. 5(2)(c))</td></tr>
+<tr><td>Run the online leaderboard, show your rank, nickname and character</td><td>User ID, nickname, scores, timestamps, selected character</td><td>Performance of our agreement with you to provide the game (GDPR Art. 6(1)(b); KVKK Art. 5(2)(c))</td></tr>
 <tr><td>Keep the community safe: filter offensive nicknames, handle reports, hide blocked players, prevent cheating and abuse</td><td>Nickname, reports, block list, scores, technical request data</td><td>Legitimate interests (GDPR Art. 6(1)(f); KVKK Art. 5(2)(f)) and compliance with App Store rules for user-generated content</td></tr>
+<tr><td>Tell you when another player beats your record (only if you turn notifications on)</td><td>User ID, push token, app language, time-zone offset, scores</td><td>Your consent (GDPR Art. 6(1)(a); KVKK Art. 5(1)), which you can withdraw at any time by turning notifications off</td></tr>
 <tr><td>Show optional rewarded ads and measure them</td><td>AdMob data (see 2.3)</td><td>Personalised ads and IDFA: your consent (GDPR Art. 6(1)(a); KVKK Art. 5(1)); non-personalised ads: legitimate interests in funding a free game</td></tr>
 <tr><td>Deliver purchases and restore them</td><td>Purchase confirmation from Apple</td><td>Performance of contract</td></tr>
 <tr><td>Answer your support requests</td><td>Your e-mail and whatever you send us</td><td>Legitimate interests / performance of contract</td></tr>
@@ -79,8 +82,8 @@ Contact: <a href="mailto:smzozkn@gmail.com">smzozkn@gmail.com</a></p>
 <ul>
 <li><strong>Supabase</strong> (Supabase Inc.) – hosts our database and anonymous authentication. Data is stored in the <strong>European Union (Ireland, AWS eu-west-1)</strong>. Supabase acts as our processor.</li>
 <li><strong>Google</strong> (Google Ireland Ltd. / Google LLC) – AdMob advertising and the User Messaging Platform consent tool (see 2.3).</li>
-<li><strong>Apple</strong> – App Store distribution and in-app purchase processing.</li>
-<li><strong>Other players</strong> – see your nickname, score, steps and rank on the leaderboard.</li>
+<li><strong>Apple</strong> – App Store distribution, in-app purchase processing and delivery of push notifications (Apple Push Notification service receives your push token and the notification text).</li>
+<li><strong>Other players</strong> – see your nickname, score, steps, rank and selected character on the leaderboard and in their game.</li>
 <li><strong>Authorities</strong> – only if we are legally required to.</li>
 </ul>
 <p><strong>International transfers.</strong> Our database is in the EU. Google and Apple may process data in the United States and other countries; they rely on safeguards such as the EU Standard Contractual Clauses and the EU-U.S. Data Privacy Framework. For users in Turkey, transfers abroad take place under KVKK Article 9 (for example standard contracts notified to the Personal Data Protection Authority, or your consent where required).</p>
@@ -90,6 +93,7 @@ Contact: <a href="mailto:smzozkn@gmail.com">smzozkn@gmail.com</a></p>
 <li><strong>Account, nickname and scores:</strong> as long as your anonymous account exists. Accounts with no activity for 24 months may be deleted automatically.</li>
 <li><strong>Reports:</strong> up to 12 months after the report is resolved, unless needed longer to deal with repeated abuse.</li>
 <li><strong>Block list:</strong> until you unblock the player or delete your data.</li>
+<li><strong>Push token:</strong> until you turn notifications off, delete your data, or Apple reports that the token is no longer valid (for example after you uninstall the app). Pending notifications are discarded after 24 hours.</li>
 <li><strong>Server logs:</strong> kept by our hosting provider for a short period (typically days) for security and debugging.</li>
 <li><strong>Backups:</strong> deleted data may remain in encrypted backups for up to 30 days before being overwritten.</li>
 <li><strong>Advertising data:</strong> retained by Google according to its own policies.</li>
@@ -97,7 +101,7 @@ Contact: <a href="mailto:smzozkn@gmail.com">smzozkn@gmail.com</a></p>
 
 <h2 id="s6">6. Deleting your data</h2>
 <ul>
-<li><strong>In the app:</strong> open <strong>Settings → Delete my data</strong> and confirm. This permanently deletes your anonymous account, nickname, scores, reports you made and your block list from our server. Coins, characters and your best score stored only on your device are kept. It cannot be undone.</li>
+<li><strong>In the app:</strong> open <strong>Settings → Delete my data</strong> and confirm. This permanently deletes your anonymous account, nickname, scores, selected character, reports you made, your block list and your push token from our server. Coins, characters and your best score stored only on your device are kept. It cannot be undone.</li>
 <li><strong>By e-mail:</strong> write to <a href="mailto:smzozkn@gmail.com">smzozkn@gmail.com</a> with your nickname as shown on the leaderboard (and, if possible, a screenshot of your Settings or leaderboard screen) so we can find your anonymous account. We respond within 30 days.</li>
 <li>Uninstalling the app removes local data, but <strong>does not</strong> delete your leaderboard entry on our server. Use one of the options above.</li>
 <li>Purchases are recorded by Apple, not by us; deleting your data does not cancel or refund purchases. Non-consumable purchases can be restored with <strong>Settings → Restore Purchases</strong>.</li>
